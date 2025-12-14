@@ -28,26 +28,24 @@ const ContactSection = () => {
           </p>
 
           {/* Email CTA */}
-          <div className="inline-block">
-            <a
-              href={`mailto:${CONSTANTS.email}`}
-              className="group relative inline-flex items-center gap-4 px-8 py-6 bg-card rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-500 hover-lift"
-              aria-label={`Send email to ${CONSTANTS.email}`}
-            >
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <Mail className="w-6 h-6 text-primary" />
-              </div>
-              <div className="text-left">
-                <p className="text-sm text-muted-foreground mb-1">
-                  {CONSTANTS.contact.cta.email}
-                </p>
-                <p className="text-xl font-display font-semibold text-foreground group-hover:text-primary transition-colors">
-                  {CONSTANTS.email}
-                </p>
-              </div>
-              <ArrowUpRight className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </a>
-          </div>
+          <a
+            href={`mailto:${CONSTANTS.email}`}
+            className="group relative inline-flex items-center gap-4 sm:px-8 sm:py-6 p-6 bg-card rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-500 hover-lift"
+            aria-label={`Send email to ${CONSTANTS.email}`}
+          >
+            <div className="sm:w-14 sm:h-14 h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+              <Mail className="sm:w-6 sm:h-6 w-4 h-4 text-primary" />
+            </div>
+            <div className="text-left">
+              <p className="text-sm text-muted-foreground mb-1">
+                {CONSTANTS.contact.cta.email}
+              </p>
+              <p className="sm:text-xl text-sm font-display font-semibold text-foreground group-hover:text-primary transition-colors">
+                {CONSTANTS.email}
+              </p>
+            </div>
+            <ArrowUpRight className="sm:w-6 sm:h-6 w-4 h-4 text-muted-foreground group-hover:text-primary transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 mt-12">

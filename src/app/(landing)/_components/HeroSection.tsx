@@ -32,8 +32,8 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-20 right-20 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none animate-float" />
 
-      <div className="container-narrow pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="container-narrow pt-32 pb-20 mt-12">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-64 items-center">
           {/* Text Content */}
           <div className="order-2 lg:order-1">
             <p className="text-muted-foreground text-lg mb-4 font-body">
