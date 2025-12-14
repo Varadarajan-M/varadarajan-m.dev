@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans } from "next/font/google";
 import "./globals.css";
@@ -101,6 +102,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${bebasNeue.variable} ${dmSans.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
